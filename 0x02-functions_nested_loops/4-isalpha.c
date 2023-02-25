@@ -2,7 +2,7 @@
 
 /**
 
- * _isalpha-check if character is lowercase or uppercase
+ * _isalpha - checks alphabetic charater
 
  * @c:character to check if it islowercase.
 
