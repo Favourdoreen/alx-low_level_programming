@@ -2,12 +2,7 @@
 #include <unistd.h>
 /**
  * main - First Entry
- *
-<<<<<<< HEAD
- * return: Always 1 (Success)
-=======
  * Return: Always 1 (Success)
->>>>>>> de313c14a807d6cd65872ea57fea695f57992ac7
  */
 int main(void)
 {
