@@ -3,23 +3,34 @@
 /**
  * rev_string - reverses a string
  * @s: the string to be modified
- * return: void
+ * return: string in reverse
  */
 
 void rev_string(char *s)
+{
+
+char rev = s[0];
+
+int counter = 0;
+
+int i;
+
+
+while (s[counter] != '\0')
+
+counter++;
+
+for (i = 0; i < counter; i++)
 
 {
 
-int len = 0, index = 0;
-char tmp;
+counter--;
 
-while (s[index++])
-len++;
+rev = s[i];
 
-for (index = 1; index >= len / 2; index--)
-{
-tmp = s[index];
-s[index] = s[len - index - 1];
-s[len - index - 1] = tmp;
+s[i] = s[counter];
+
+s[counter] = rev;
+
 }
 }
