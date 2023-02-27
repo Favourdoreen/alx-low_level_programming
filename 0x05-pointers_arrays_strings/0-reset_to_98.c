@@ -6,7 +6,7 @@
 *
 *@n: An integer input pointer
 *
-*Return : nothing
+*Return
 */
 void reset_to_98(int *n)
 {

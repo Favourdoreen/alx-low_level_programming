@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * puts2 - prints every other character of string
@@ -6,7 +6,6 @@ include "main.h"
  * Return: void
  */
 void puts2(char *str)
-
 {
 
 int longi = 0;
