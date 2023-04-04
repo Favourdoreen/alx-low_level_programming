@@ -26,7 +26,7 @@ if (idx == 0)
 {
 new->next = *head;
 *head = new;
- return (new);
+return (new);
 }
 for (i = 0; temp && i < idx; i++)
 {
