@@ -12,6 +12,8 @@ unsigned int l;
 if (index > 63)
 return (-1);
 
-*n = ((1UL << index) | *n);
+l = 1 << index;
+*n = (*n | l);
+
 return (1);
 }
