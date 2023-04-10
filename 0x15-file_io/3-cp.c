@@ -3,19 +3,19 @@
 
 /**
  * error_file - checks if files can be opened.
- * @file_from: file_from.
- * @file_to: file_to.
+ * @from: from.
+ * @to: to.
  * @argv: arguments vector.
  * Return: no return.
  */
-void error_file(int file_from, int file_to, char *argv[])
+void error_file(int from, int to, char *argv[])
 {
-if (file_from == -1)
+if (from == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 exit(98);
 }
-if (file_to == -1)
+if (to == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 exit(99);
@@ -27,9 +27,9 @@ exit(99);
  * @argv: array of pointers to the arguments.
  * Return: Always 0.
  * If the argument count is incorrect - exit code 97.
- * If file_from does not exist or cannot be read - exit code 98
- * If file_to cannot be created or written to - exit code 99.
- *  If file_to or file_from cannot be closed - exit code 100
+ * If from does not exist or cannot be read - exit code 98
+ * If to cannot be created or written to - exit code 99.
+ *  If to or from cannot be closed - exit code 100
  */
 int main(int argc, char *argv[])
 {

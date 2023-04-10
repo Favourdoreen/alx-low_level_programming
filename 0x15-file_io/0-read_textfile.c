@@ -26,9 +26,9 @@ if (!buf)
 return (0);
 
 n = read(fd, buf, letters);
-m = write(STDOUT_FILENO, buf, nrd);
+m = write(STDOUT_FILENO, buf, n);
 close(fd);
 free(buf);
 
-return (m);
+return (n);
 }
