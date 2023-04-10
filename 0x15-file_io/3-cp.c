@@ -39,7 +39,7 @@ char buf[1024];
 
 if (argc != 3)
 {
-dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
+dprintf(STDERR_FILENO, "%s\n", "Usage: cp from to");
 exit(97);
 }
 from = open(argv[1], O_RDONLY);
@@ -58,13 +58,13 @@ error_file(0, -1, argv);
 err_close = close(from);
 if (err_close == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", from);
 exit(100);
 }
 err_close = close(to);
 if (err_close == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", from);
 exit(100);
 }
 return (0);
