@@ -14,7 +14,7 @@ int j, count = 0;
 unsigned long int current;
 unsigned long int exclusive = n ^ m;
 
-for (j = 64; ip >= 0; j--)
+for (j = 64; j >= 0; j--)
 {
 current = exclusive >> j;
 if (current & 1)
